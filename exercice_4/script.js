@@ -5,16 +5,14 @@
 // "Vous avez cliqué X fois."
 // où X est le nombre de clics effectués depuis le chargement de la page.
 
-
-
 let btn = document.getElementById("compter");
+btn.addEventListener("click", comptage);
+let resultat = 0;
 
-btn.addEventListener("click", (event) => {
-    
-});
-
-function trouverNombreX(){
-    let x = 0;
-    
-    for (let )
+function comptage() {
+  resultat = resultat + 1;
+  let click = document.getElementById("resultat");
+  click.textContent = resultat;
 }
+
+

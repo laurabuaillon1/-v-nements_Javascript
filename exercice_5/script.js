@@ -7,15 +7,13 @@
 // "Bonjour, [valeur du champ]"
 // (par exemple : "Bonjour, Sophie").
 
+let boutton = document.getElementById("afficherNom");
+let input = document.getElementById("champNom");
+let div = document.getElementById("div");
 
-let btn = document.getElementById('afficherNom')
-let champDeTexte = document.getElementById('champNom')
-
-let paragraphe = document.createElement('p')
-paragraphe.id = "message";
-
-console.log(paragraphe)
-
-btn.addEventListener("click",()=>{
-
-})
+boutton.addEventListener("click", () => {
+  let paragraphe = document.createElement("p");
+  paragraphe.textContent = "Bonjour," + input.value;
+  
+  div.appendChild(paragraphe);
+});
